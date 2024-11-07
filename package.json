@@ -1,0 +1,14 @@
+{
+  "name": "projet-devops-group-8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jasmine": "^5.4.0"
+  }
+}
