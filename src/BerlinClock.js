@@ -6,6 +6,8 @@ export class Main {
             return "Y Y O O";
         } else if(minutes == 3){
             return "Y Y Y O";
+        } else if(minutes == 4){
+            return "Y Y Y Y";
         }
         return "O O O O";
     }
