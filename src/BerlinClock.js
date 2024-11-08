@@ -8,6 +8,9 @@ export class Main {
   }
 
   blocDe5Minutes(minutes) {
+    if (minutes===1){
+      return "Y O O O O O O O O O O"
+    }
     return "O O O O O O O O O O O";
   }
 }
