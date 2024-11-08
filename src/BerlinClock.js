@@ -6,4 +6,8 @@ export class Main {
 
     return patterns[minutes];
   }
+
+  blocDe5Minutes(minutes) {
+    return "O O O O O O O O O O O";
+  }
 }
