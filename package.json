@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Vanilla JS implementation of the Berlin Clock Kata",
   "main": "src/app.js",
+  "type": "module",
   "scripts": {
     "test": "jasmine"
   },
