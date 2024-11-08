@@ -1,5 +1,7 @@
 export class Main {
     simpleMinutesLine(minutes){
+        minutes = minutes % 5;
+
         if(minutes == 1){
             return "Y O O O";
         } else if(minutes == 2){
