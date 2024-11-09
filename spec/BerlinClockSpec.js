@@ -273,5 +273,13 @@ describe('BerlinClock', () => {
         
         expect(result).toBe("O");
     });
+
+    it('BlocDeSecondes should return "Y" when given 3', function () {
+        const main = new Main();
+
+        const result = main.blocDeSecondes(3);
+        
+        expect(result).toBe("Y");
+    });
 });
 
