@@ -23,4 +23,8 @@ export class Main {
 
     return patterns[heures];
   }
+
+  blocDe5Heure(heures) {
+   return "O O O O";
+  }
 }
