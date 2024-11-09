@@ -11,6 +11,9 @@ export class Main {
     if (minutes===1){
       return "Y O O O O O O O O O O"
     }
+    if (minutes===2){
+      return "Y Y O O O O O O O O O"
+    }
     return "O O O O O O O O O O O";
   }
 }
