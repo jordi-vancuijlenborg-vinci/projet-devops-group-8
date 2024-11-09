@@ -29,18 +29,6 @@ export class Main {
 
     const patterns = ["O O O O", "Y O O O", "Y Y O O", "Y Y Y O", "Y Y Y Y"];
 
-    if (heures === 1) {
-      return patterns[1];
-    }
-    if (heures === 2) {
-      return patterns[2];
-    }
-    if (heures === 3) {
-      return patterns[3];
-    }
-    if (heures === 4) {
-      return patterns[4];
-    }
-   return patterns[0];
+    return patterns[heures];
   }
 }
