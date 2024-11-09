@@ -31,4 +31,8 @@ export class Main {
 
     return patterns[heures];
   }
+
+  blocDeSecondes(secondes) {
+    return "0";
+  }
 }
