@@ -17,22 +17,26 @@ export class Main {
   }
 
   blocDe1Heure(heures) {
+    heures = heures % 5;
+
+    const patterns = ["O O O O", "Y O O O", "Y Y O O", "Y Y Y O", "Y Y Y Y"];
+
     if(heures === 1) {
-      return "Y O O O";
+      return patterns[1];
     }
 
     if(heures === 2) {
-      return "Y Y O O";
+      return patterns[2];
     }
 
     if(heures === 3) {
-      return "Y Y Y O";
+      return patterns[3];
     }
 
     if(heures === 4) {
-      return "Y Y Y Y";
+      return patterns[4];
     }
 
-    return "O O O O";
+    return patterns[0];
   }
 }
