@@ -31,4 +31,10 @@ export class Main {
 
     return patterns[heures];
   }
+
+  blocDeSecondes(secondes) {
+    secondes = secondes % 2;
+
+    return secondes === 0 ? "O" : "Y";
+  }
 }
