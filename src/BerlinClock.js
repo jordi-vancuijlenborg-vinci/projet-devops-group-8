@@ -31,6 +31,9 @@ export class Main {
     if (heures === 2) {
       return "Y Y O O";
     }
+    if (heures === 3) {
+      return "Y Y Y O";
+    }
    return "O O O O";
   }
 }
