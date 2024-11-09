@@ -15,4 +15,8 @@ export class Main {
     
     return patterns[minutes];
   }
+
+  blocDe1Heure(heures) {
+    return "O O O O";
+  }
 }
