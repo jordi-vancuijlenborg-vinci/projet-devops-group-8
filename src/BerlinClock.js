@@ -33,14 +33,8 @@ export class Main {
   }
 
   blocDeSecondes(secondes) {
-    if(secondes === 1) {
-      return "Y";
-    }
+    secondes = secondes % 2;
 
-    if(secondes === 2) {
-      return "O";
-    }
-
-    return "O";
+    return secondes === 0 ? "O" : "Y";
   }
 }
