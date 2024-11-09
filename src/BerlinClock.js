@@ -37,6 +37,10 @@ export class Main {
       return "Y";
     }
 
-    return "0";
+    if(secondes === 2) {
+      return "O";
+    }
+
+    return "O";
   }
 }

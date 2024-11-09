@@ -250,12 +250,12 @@ describe('BerlinClock', () => {
         expect(result).toBe("O O O O");
     });
 
-    it('BlocDeSecondes should return "0" when given 0', function () {
+    it('BlocDeSecondes should return "O" when given 0', function () {
         const main = new Main();
 
         const result = main.blocDeSecondes(0);
         
-        expect(result).toBe("0");
+        expect(result).toBe("O");
     });
 
     it('BlocDeSecondes should return "Y" when given 1', function () {
@@ -264,6 +264,14 @@ describe('BerlinClock', () => {
         const result = main.blocDeSecondes(1);
         
         expect(result).toBe("Y");
+    });
+
+    it('BlocDeSecondes should return "O" when given 2', function () {
+        const main = new Main();
+
+        const result = main.blocDeSecondes(2);
+        
+        expect(result).toBe("O");
     });
 });
 
