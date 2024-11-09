@@ -15,4 +15,12 @@ export class Main {
     
     return patterns[minutes];
   }
+
+  blocDe1Heure(heures) {
+    heures = heures % 5;
+
+    const patterns = ["O O O O", "Y O O O", "Y Y O O", "Y Y Y O", "Y Y Y Y"];
+
+    return patterns[heures];
+  }
 }
