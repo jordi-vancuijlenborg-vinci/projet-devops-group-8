@@ -17,6 +17,9 @@ export class Main {
     if (minutes===3){
       return "Y Y Y O O O O O O O O"
     }
+    if (minutes===4){
+      return "Y Y Y Y O O O O O O O"
+    }
     return "O O O O O O O O O O O";
   }
 }
