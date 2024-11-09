@@ -138,6 +138,13 @@ describe('BerlinClock', () => {
         expect(result).toBe("Y Y Y Y Y Y Y Y Y O O");
     });
 
+    it('BocDe5Minutes should return "Y Y Y Y Y Y Y Y Y Y O" when given 10', function () {
+        const main = new Main();
+
+        const result = main.blocDe5Minutes(10);
+        
+        expect(result).toBe("Y Y Y Y Y Y Y Y Y Y O");
+    });
 
 
 });

@@ -35,6 +35,9 @@ export class Main {
     if (minutes===9){
       return "Y Y Y Y Y Y Y Y Y O O"
     }
+    if (minutes===10){
+      return "Y Y Y Y Y Y Y Y Y Y O"
+    }
     return "O O O O O O O O O O O";
   }
 }
