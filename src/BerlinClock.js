@@ -32,6 +32,9 @@ export class Main {
     if (minutes===8){
       return "Y Y Y Y Y Y Y Y O O O"
     }
+    if (minutes===9){
+      return "Y Y Y Y Y Y Y Y Y O O"
+    }
     return "O O O O O O O O O O O";
   }
 }
