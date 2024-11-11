@@ -59,6 +59,17 @@ export class Main {
       "Y O O O"
     ];
     }
+    
+    if (hh === 1){
+      return [
+      "O",                     
+      "O O O O",               
+      "Y O O O",               
+      "O O O O O O O O O O O", 
+      "O O O O"
+    ];
+    }
+
 
     return [
       "O",                     
