@@ -58,7 +58,7 @@ describe('BerlinClock', () => {
         expect(result).toBe("Y O O O");
     });
 
-    it('BocDe5Minutes should return "O O O O O O O O O O O" when given O', function () {
+    it('BlocDe5Minutes should return "O O O O O O O O O O O" when given O', function () {
         const main = new Main();
 
         const result = main.blocDe5Minutes(0);
@@ -66,92 +66,92 @@ describe('BerlinClock', () => {
         expect(result).toBe("O O O O O O O O O O O");
     });
 
-    it('BocDe5Minutes should return "Y O O O O O O O O O O" when given 1', function () {
+    it('BlocDe5Minutes should return "O O O O O O O O O O O" when given 1', function () {
         const main = new Main();
 
         const result = main.blocDe5Minutes(1);
         
-        expect(result).toBe("Y O O O O O O O O O O");
+        expect(result).toBe("O O O O O O O O O O O");
     });
 
-    it('BocDe5Minutes should return "Y Y O O O O O O O O O" when given 2', function () {
+    it('BlocDe5Minutes should return "O O O O O O O O O O O" when given 2', function () {
         const main = new Main();
 
         const result = main.blocDe5Minutes(2);
         
-        expect(result).toBe("Y Y O O O O O O O O O");
+        expect(result).toBe("O O O O O O O O O O O");
     });
 
-    it('BocDe5Minutes should return "Y Y Y O O O O O O O O" when given 3', function () {
+    it('BlocDe5Minutes should return "O O O O O O O O O O O" when given 3', function () {
         const main = new Main();
 
         const result = main.blocDe5Minutes(3);
         
-        expect(result).toBe("Y Y Y O O O O O O O O");
+        expect(result).toBe("O O O O O O O O O O O");
     });
 
-    it('BocDe5Minutes should return "Y Y Y Y O O O O O O O" when given 4', function () {
+    it('BlocDe5Minutes should return "O O O O O O O O O O O" when given 4', function () {
         const main = new Main();
 
         const result = main.blocDe5Minutes(4);
         
-        expect(result).toBe("Y Y Y Y O O O O O O O");
+        expect(result).toBe("O O O O O O O O O O O");
     });
 
-    it('BocDe5Minutes should return "Y Y Y Y Y O O O O O O" when given 5', function () {
+    it('BlocDe5Minutes should return "Y O O O O O O O O O O" when given 5', function () {
         const main = new Main();
 
         const result = main.blocDe5Minutes(5);
         
-        expect(result).toBe("Y Y Y Y Y O O O O O O");
+        expect(result).toBe("Y O O O O O O O O O O");
     });
 
-    it('BocDe5Minutes should return "Y Y Y Y Y Y O O O O O" when given 6', function () {
+    it('BlocDe5Minutes should return "Y O O O O O O O O O O" when given 6', function () {
         const main = new Main();
 
         const result = main.blocDe5Minutes(6);
         
-        expect(result).toBe("Y Y Y Y Y Y O O O O O");
+        expect(result).toBe("Y O O O O O O O O O O");
     });
 
-    it('BocDe5Minutes should return "Y Y Y Y Y Y Y O O O O" when given 7', function () {
+    it('BlocDe5Minutes should return "Y O O O O O O O O O O" when given 7', function () {
         const main = new Main();
 
         const result = main.blocDe5Minutes(7);
         
-        expect(result).toBe("Y Y Y Y Y Y Y O O O O");
+        expect(result).toBe("Y O O O O O O O O O O");
     });
 
-    it('BocDe5Minutes should return "Y Y Y Y Y Y Y Y O O O" when given 8', function () {
+    it('BlocDe5Minutes should return "Y O O O O O O O O O O" when given 8', function () {
         const main = new Main();
 
         const result = main.blocDe5Minutes(8);
         
-        expect(result).toBe("Y Y Y Y Y Y Y Y O O O");
+        expect(result).toBe("Y O O O O O O O O O O");
     });
 
-    it('BocDe5Minutes should return "Y Y Y Y Y Y Y Y Y O O" when given 9', function () {
+    it('BlocDe5Minutes should return "Y O O O O O O O O O O" when given 9', function () {
         const main = new Main();
 
         const result = main.blocDe5Minutes(9);
         
-        expect(result).toBe("Y Y Y Y Y Y Y Y Y O O");
+        expect(result).toBe("Y O O O O O O O O O O");
     });
 
-    it('BocDe5Minutes should return "Y Y Y Y Y Y Y Y Y Y O" when given 10', function () {
+    it('BlocDe5Minutes should return "Y Y O O O O O O O O O" when given 10', function () {
         const main = new Main();
 
         const result = main.blocDe5Minutes(10);
         
-        expect(result).toBe("Y Y Y Y Y Y Y Y Y Y O");
+        expect(result).toBe("Y Y O O O O O O O O O");
     });
 
-    it('BocDe5Minutes should return "Y Y Y Y Y Y Y Y Y Y Y" when given 11', function () {
+    it('BlocDe5Minutes should return "Y Y O O O O O O O O O" when given 11', function () {
         const main = new Main();
 
         const result = main.blocDe5Minutes(11);
         
-        expect(result).toBe("Y Y Y Y Y Y Y Y Y Y Y");
+        expect(result).toBe("Y Y O O O O O O O O O");
     });
 
     it('BlocDe1Heure should return "O O O O" when given 0', function () {
@@ -210,44 +210,44 @@ describe('BerlinClock', () => {
         expect(result).toBe("O O O O");
     });
 
-    it('BlocDe5Heure should return "Y O O O" when given 1', function () {
+    it('BlocDe5Heure should return "O O O O" when given 1', function () {
         const main = new Main();
 
         const result = main.blocDe5Heure(1);
         
-        expect(result).toBe("Y O O O");
+        expect(result).toBe("O O O O");
     });
 
-    it('BlocDe5Heure should return "Y Y O O" when given 2', function () {
+    it('BlocDe5Heure should return "O O O O" when given 2', function () {
         const main = new Main();
 
         const result = main.blocDe5Heure(2);
         
-        expect(result).toBe("Y Y O O");
+        expect(result).toBe("O O O O");
     });
 
-    it('BlocDe5Heure should return "Y Y Y O" when given 3', function () {
+    it('BlocDe5Heure should return "O O O O" when given 3', function () {
         const main = new Main();
 
         const result = main.blocDe5Heure(3);
         
-        expect(result).toBe("Y Y Y O");
+        expect(result).toBe("O O O O");
     });
 
-    it('BlocDe5Heure should return "Y Y Y Y" when given 4', function () {
+    it('BlocDe5Heure should return "O O O O" when given 4', function () {
         const main = new Main();
 
         const result = main.blocDe5Heure(4);
         
-        expect(result).toBe("Y Y Y Y");
+        expect(result).toBe("O O O O");
     });
 
-    it('BlocDe5Heure should return "O O O O" when given 5', function () {
+    it('BlocDe5Heure should return "Y O O O" when given 5', function () {
         const main = new Main();
 
         const result = main.blocDe5Heure(5);
         
-        expect(result).toBe("O O O O");
+        expect(result).toBe("Y O O O");
     });
 
     it('BlocDeSecondes should return "O" when given 0', function () {
@@ -334,6 +334,20 @@ describe('BerlinClock', () => {
             "Y O O O",               
             "O O O O O O O O O O O", 
             "O O O O"                
+        ]);
+    });
+
+    it('berlinClock should return "Y\nY Y Y O\nY Y Y Y\nY Y Y Y Y Y Y Y O O O \nY Y O O" when given "19:43:02"', function () {
+        const main = new Main();
+        
+        const result = main.berlinClock("19:43:02");
+        
+        expect(result).toEqual([
+            "O",                     
+            "Y Y Y O",               
+            "Y Y Y Y",               
+            "Y Y Y Y Y Y Y Y O O O", 
+            "Y Y Y O"                
         ]);
     });
 });
