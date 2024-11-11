@@ -42,13 +42,24 @@ export class Main {
     const [hh, mm, ss] = time.split(":").map(Number);
     if (ss === 1){
       return [
-        "Y",                     
-        "O O O O",               
+      "Y",                     
+      "O O O O",               
       "O O O O",               
       "O O O O O O O O O O O", 
       "O O O O"
     ];
     }
+
+    if (mm === 1){
+      return [
+      "O",                     
+      "O O O O",               
+      "O O O O",               
+      "O O O O O O O O O O O", 
+      "Y O O O"
+    ];
+    }
+
     return [
       "O",                     
       "O O O O",               

@@ -309,5 +309,19 @@ describe('BerlinClock', () => {
             "O O O O"                
         ]);
     });
+
+    it('berlinClock should return "O\nO O O O\nO O O O\nO O O O O\nY O O O" when given "00:01:00"', function () {
+        const main = new Main();
+        
+        const result = main.berlinClock("00:01:00");
+        
+        expect(result).toEqual([
+            "O",                     
+            "O O O O",               
+            "O O O O",               
+            "O O O O O O O O O O O", 
+            "Y O O O"                
+        ]);
+    });
 });
 
