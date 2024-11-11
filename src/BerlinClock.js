@@ -33,6 +33,9 @@ export class Main {
   }
 
   blocDeSecondes(secondes) {
+    if (secondes < 0 || secondes > 59) {
+      throw new Error("Le nombre de secondes doit être compris entre 0 et 59");
+    }
     secondes = secondes % 2;
 
     return secondes === 0 ? "O" : "Y";
