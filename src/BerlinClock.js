@@ -37,4 +37,16 @@ export class Main {
 
     return secondes === 0 ? "O" : "Y";
   }
+
+  berlinClock(time) {
+    return [
+      "O",                     
+      "O O O O",               
+      "O O O O",               
+      "O O O O O O O O O O O", 
+      "O O O O"
+    ];
+  }
+
 }
+
