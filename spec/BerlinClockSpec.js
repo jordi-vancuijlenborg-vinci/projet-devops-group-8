@@ -381,7 +381,14 @@ describe('BerlinClock', () => {
 
     it('berlinClock should throw an error when given "24:00:00"', () => {
         const main = new Main();
+
         expect(() => main.berlinClock("24:00:00")).toThrow();
+    });
+
+    it('berlinClock should throw an error when given "-24:00:00"', () => {
+        const main = new Main();
+
+        expect(() => main.berlinClock("-24:00:00")).toThrow();
     });
 });
 
