@@ -51,6 +51,10 @@ export class Main {
       throw new Error("Le nombre de minutes doit être compris entre 0 et 59");
     }
 
+    if (ss == 60) {
+      throw new Error("Le nombre de secondes doit être compris entre 0 et 59");
+    }
+
     return [
       this.blocDeSecondes(ss),
       this.blocDe5Heure(hh),

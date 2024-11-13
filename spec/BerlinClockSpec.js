@@ -403,5 +403,11 @@ describe('BerlinClock', () => {
 
         expect(() => main.berlinClock("00:-60:00")).toThrow();
     });
+
+    it('berlinClock should throw an error when given "00:00:60"', () => {
+        const main = new Main();
+
+        expect(() => main.berlinClock("00:00:60")).toThrow();
+    });
 });
 
