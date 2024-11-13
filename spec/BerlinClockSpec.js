@@ -415,5 +415,11 @@ describe('BerlinClock', () => {
 
         expect(() => main.berlinClock("00:00:-60")).toThrow();
     });
+
+    it('berlinClock should throw an error when given "02:99:66"', () => {
+        const main = new Main();
+
+        expect(() => main.berlinClock("25:04:66")).toThrow();
+    });
 });
 

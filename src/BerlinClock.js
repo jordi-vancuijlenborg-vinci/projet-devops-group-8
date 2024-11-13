@@ -47,12 +47,9 @@ export class Main {
     if (hh < 0 || hh > 23) {
       throw new Error("Le nombre d'heures doit être compris entre 0 et 23");
     }
-    if (mm < 0 || mm > 59) {
-      throw new Error("Le nombre de minutes doit être compris entre 0 et 59");
-    }
 
-    if (ss < 0 || ss > 59) {
-      throw new Error("Le nombre de secondes doit être compris entre 0 et 59");
+    if (( mm < 0 || mm > 59) || (ss < 0 || ss > 59)) {
+      throw new Error("Le nombre de minutes doit être compris entre 0 et 59");
     }
 
     return [
