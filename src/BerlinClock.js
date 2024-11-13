@@ -47,6 +47,9 @@ export class Main {
     if (hh < 0 || hh > 23) {
       throw new Error("Le nombre d'heures doit être compris entre 0 et 23");
     }
+    if(mm === 60){
+      throw new Error("Le nombre de minutes doit être compris entre 0 et 59");
+    }
 
     return [
       this.blocDeSecondes(ss),
