@@ -1,3 +1,5 @@
+import { Main } from '../src/BerlinClock.js';
+
 describe('SimpleMinuteLine', () => {
     it('SimpleMinutesLine should return "O O O O" when given 0', function () {
         const main = new Main();
