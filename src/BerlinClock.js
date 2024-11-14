@@ -15,7 +15,7 @@ export class Main {
     return patterns[minutes];
   }
 
-  blocDe1Heure(heures) {
+  oneHourLine(heures) {
     heures = heures % 5;
 
     const patterns = ["O O O O", "Y O O O", "Y Y O O", "Y Y Y O", "Y Y Y Y"];
@@ -55,7 +55,7 @@ export class Main {
       this.blocDeSecondes(ss),
       this.blocDe5Heure(hh),
       this.blocDe1Heure(hh),
-      this.blocDe5Minutes(mm),
+      this.fiveMinutesLine(mm),
       this.simpleMinutesLine(mm)
     ];
   }
