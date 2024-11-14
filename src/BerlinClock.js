@@ -32,9 +32,6 @@ export class BerlinClock {
   }
 
   secondsLine(secondes) {
-    if (secondes < 0 || secondes > 59) {
-      throw new Error("Le nombre de secondes doit être compris entre 0 et 59");
-    }
     secondes = secondes % 2;
 
     return secondes === 0 ? "O" : "Y";
@@ -44,11 +41,11 @@ export class BerlinClock {
     const [hh, mm, ss] = time.split(":").map(Number);
 
     if (hh < 0 || hh > 23) {
-      throw new Error("Le nombre d'heures doit être compris entre 0 et 23");
+      throw new Error("Number of hours must be between 0 and 23");
     }
 
     if (( mm < 0 || mm > 59) || (ss < 0 || ss > 59)) {
-      throw new Error("Le nombre de minutes doit être compris entre 0 et 59");
+      throw new Error("Number of minutes and seconds must be between 0 and 59");
     }
 
     return [
