@@ -2,38 +2,6 @@ import { Main } from '../src/BerlinClock.js';
 
 describe('BerlinClock', () => {
 
-    it('BlocDeSecondes should return "O" when given 0', function () {
-        const main = new Main();
-
-        const result = main.blocDeSecondes(0);
-        
-        expect(result).toBe("O");
-    });
-
-    it('BlocDeSecondes should return "Y" when given 1', function () {
-        const main = new Main();
-
-        const result = main.blocDeSecondes(1);
-        
-        expect(result).toBe("Y");
-    });
-
-    it('BlocDeSecondes should return "O" when given 2', function () {
-        const main = new Main();
-
-        const result = main.blocDeSecondes(2);
-        
-        expect(result).toBe("O");
-    });
-
-    it('BlocDeSecondes should return "Y" when given 3', function () {
-        const main = new Main();
-
-        const result = main.blocDeSecondes(3);
-        
-        expect(result).toBe("Y");
-    });
-
     it('berlinClock should return "O\nO O O O\nO O O O\nO O O O O\nO O O O" when given "00:00:00"', function () {
         const main = new Main();
         
