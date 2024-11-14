@@ -1,50 +1,50 @@
-import { Main } from '../src/BerlinClock.js';
+import { BerlinClock } from '../src/BerlinClock.js';
 
 describe('fiveHoursLine', () => {
     it('fiveHoursLine should return "O O O O" when given 0', function () {
-        const main = new Main();
+        const berlinClock = new BerlinClock();
 
-        const result = main.fiveHoursLine(0);
+        const result = berlinClock.fiveHoursLine(0);
         
         expect(result).toBe("O O O O");
     });
 
     it('fiveHoursLine should return "O O O O" when given 1', function () {
-        const main = new Main();
+        const berlinClock = new BerlinClock();
 
-        const result = main.fiveHoursLine(1);
+        const result = berlinClock.fiveHoursLine(1);
         
         expect(result).toBe("O O O O");
     });
 
     it('fiveHoursLine should return "O O O O" when given 2', function () {
-        const main = new Main();
+        const berlinClock = new BerlinClock();
 
-        const result = main.fiveHoursLine(2);
+        const result = berlinClock.fiveHoursLine(2);
         
         expect(result).toBe("O O O O");
     });
 
     it('fiveHoursLine should return "O O O O" when given 3', function () {
-        const main = new Main();
+        const berlinClock = new BerlinClock();
 
-        const result = main.fiveHoursLine(3);
+        const result = berlinClock.fiveHoursLine(3);
         
         expect(result).toBe("O O O O");
     });
 
     it('fiveHoursLine should return "O O O O" when given 4', function () {
-        const main = new Main();
+        const berlinClock = new BerlinClock();
 
-        const result = main.fiveHoursLine(4);
+        const result = berlinClock.fiveHoursLine(4);
         
         expect(result).toBe("O O O O");
     });
 
     it('fiveHoursLine should return "Y O O O" when given 5', function () {
-        const main = new Main();
+        const berlinClock = new BerlinClock();
 
-        const result = main.fiveHoursLine(5);
+        const result = berlinClock.fiveHoursLine(5);
         
         expect(result).toBe("Y O O O");
     });

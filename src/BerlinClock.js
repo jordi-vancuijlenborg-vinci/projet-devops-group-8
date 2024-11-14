@@ -1,4 +1,4 @@
-export class Main {
+export class BerlinClock {
   simpleMinutesLine(minutes) {
     minutes = minutes % 5;
 
