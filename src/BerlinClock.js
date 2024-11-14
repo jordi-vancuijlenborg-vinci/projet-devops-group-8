@@ -53,7 +53,7 @@ export class Main {
 
     return [
       this.blocDeSecondes(ss),
-      this.blocDe5Heure(hh),
+      this.fiveHoursLine(hh),
       this.oneHourLine(hh),
       this.fiveMinutesLine(mm),
       this.simpleMinutesLine(mm)
