@@ -31,7 +31,7 @@ export class Main {
     return patterns[heures];
   }
 
-  blocDeSecondes(secondes) {
+  secondsLine(secondes) {
     if (secondes < 0 || secondes > 59) {
       throw new Error("Le nombre de secondes doit être compris entre 0 et 59");
     }
