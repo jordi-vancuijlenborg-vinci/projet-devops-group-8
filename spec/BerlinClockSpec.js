@@ -1,11 +1,11 @@
-import { Main } from '../src/BerlinClock.js';
+import { BerlinClock } from '../src/BerlinClock.js';
 
 describe('BerlinClock', () => {
 
     it('berlinClock should return "O\nO O O O\nO O O O\nO O O O O\nO O O O" when given "00:00:00"', function () {
-        const main = new Main();
+        const berlinClock = new BerlinClock();
         
-        const result = main.berlinClock("00:00:00");
+        const result = berlinClock.berlinClock("00:00:00");
         
         expect(result).toEqual([
             "O",                     
@@ -17,9 +17,9 @@ describe('BerlinClock', () => {
     });
 
     it('berlinClock should return "Y\nO O O O\nO O O O\nO O O O O\nO O O O" when given "00:00:01"', function () {
-        const main = new Main();
+        const berlinClock = new BerlinClock();
         
-        const result = main.berlinClock("00:00:01");
+        const result = berlinClock.berlinClock("00:00:01");
         
         expect(result).toEqual([
             "Y",                     
@@ -31,9 +31,9 @@ describe('BerlinClock', () => {
     });
 
     it('berlinClock should return "O\nO O O O\nO O O O\nO O O O O\nY O O O" when given "00:01:00"', function () {
-        const main = new Main();
+        const berlinClock = new BerlinClock();
         
-        const result = main.berlinClock("00:01:00");
+        const result = berlinClock.berlinClock("00:01:00");
         
         expect(result).toEqual([
             "O",                     
@@ -44,9 +44,9 @@ describe('BerlinClock', () => {
         ]);
     });
     it('berlinClock should return "O\nO O O O\nY O O O\nO O O O O\nO O O O" when given "01:00:00"', function () {
-        const main = new Main();
+        const berlinClock = new BerlinClock();
         
-        const result = main.berlinClock("01:00:00");
+        const result = berlinClock.berlinClock("01:00:00");
         
         expect(result).toEqual([
             "O",                     
@@ -58,9 +58,9 @@ describe('BerlinClock', () => {
     });
 
     it('berlinClock should return "Y\nY Y Y O\nY Y Y Y\nY Y Y Y Y Y Y Y O O O \nY Y O O" when given "19:43:02"', function () {
-        const main = new Main();
+        const berlinClock = new BerlinClock();
         
-        const result = main.berlinClock("19:43:02");
+        const result = berlinClock.berlinClock("19:43:02");
         
         expect(result).toEqual([
             "O",                     
@@ -72,9 +72,9 @@ describe('BerlinClock', () => {
     });
 
     it('berlinClock should return "Y\nY Y Y Y\nO O O O\nO O O O O O O O O O O\nY Y O O" when given "20:02:01"', function () {
-        const main = new Main();
+        const berlinClock = new BerlinClock();
         
-        const result = main.berlinClock("20:02:01");
+        const result = berlinClock.berlinClock("20:02:01");
         
         expect(result).toEqual([
             "Y",                     
@@ -86,9 +86,9 @@ describe('BerlinClock', () => {
     });
 
     it('berlinClock should return "Y\nY Y Y Y\nY Y Y O\nY Y Y Y Y Y Y Y Y Y Y\nY Y Y Y" when given "23:59:59"', function () {
-        const main = new Main();
+        const berlinClock = new BerlinClock();
         
-        const result = main.berlinClock("23:59:59");
+        const result = berlinClock.berlinClock("23:59:59");
         
         expect(result).toEqual([
             "Y",                     
@@ -100,46 +100,46 @@ describe('BerlinClock', () => {
     });
 
     it('berlinClock should throw an error when given "24:00:00"', () => {
-        const main = new Main();
+        const berlinClock = new BerlinClock();
 
-        expect(() => main.berlinClock("24:00:00")).toThrow();
+        expect(() => berlinClock.berlinClock("24:00:00")).toThrow();
     });
 
     it('berlinClock should throw an error when given "-24:00:00"', () => {
-        const main = new Main();
+        const berlinClock = new BerlinClock();
 
-        expect(() => main.berlinClock("-24:00:00")).toThrow();
+        expect(() => berlinClock.berlinClock("-24:00:00")).toThrow();
     });
 
     it('berlinClock should throw an error when given "00:60:00"', () => {
-        const main = new Main();
+        const berlinClock = new BerlinClock();
 
-        expect(() => main.berlinClock("00:60:00")).toThrow();
+        expect(() => berlinClock.berlinClock("00:60:00")).toThrow();
     });
 
     
     it('berlinClock should throw an error when given "00:-60:00"', () => {
-        const main = new Main();
+        const berlinClock = new BerlinClock();
 
-        expect(() => main.berlinClock("00:-60:00")).toThrow();
+        expect(() => berlinClock.berlinClock("00:-60:00")).toThrow();
     });
 
     it('berlinClock should throw an error when given "00:00:60"', () => {
-        const main = new Main();
+        const berlinClock = new BerlinClock();
 
-        expect(() => main.berlinClock("00:00:60")).toThrow();
+        expect(() => berlinClock.berlinClock("00:00:60")).toThrow();
     });
 
     it('berlinClock should throw an error when given "00:00:-60"', () => {
-        const main = new Main();
+        const berlinClock = new BerlinClock();
 
-        expect(() => main.berlinClock("00:00:-60")).toThrow();
+        expect(() => berlinClock.berlinClock("00:00:-60")).toThrow();
     });
 
     it('berlinClock should throw an error when given "02:99:66"', () => {
-        const main = new Main();
+        const berlinClock = new BerlinClock();
 
-        expect(() => main.berlinClock("02:99:66")).toThrow();
+        expect(() => berlinClock.berlinClock("02:99:66")).toThrow();
     });
 });
 
